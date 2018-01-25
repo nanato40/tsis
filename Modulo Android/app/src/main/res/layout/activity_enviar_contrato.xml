@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.pichau.tsis.EnviarContratoActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+    </LinearLayout>
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <TextView
+            android:id="@+id/txvA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orientações para o envio dos arquivos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txvB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Os  arquivos  a  serem  enviados  devem  estar,  obrigatoriamente,  no  formato  Pdf.  "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_below="@+id/txvA"
+            android:layout_alignLeft="@+id/txvA"
+            android:layout_alignStart="@+id/txvA"
+            android:layout_marginTop="29dp"
+            android:layout_alignRight="@+id/txvA"
+            android:layout_alignEnd="@+id/txvA" />
+
+        <TextView
+            android:id="@+id/txvC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Somente poderá ser enviado um arquivo por vez."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/txvB"
+            android:layout_alignLeft="@+id/txvB"
+            android:layout_alignStart="@+id/txvB"
+            android:layout_alignRight="@+id/txvB"
+            android:layout_alignEnd="@+id/txvB" />
+
+        <TextView
+            android:id="@+id/txvD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txvA"
+            android:layout_alignLeft="@+id/txvC"
+            android:layout_alignRight="@+id/txvA"
+            android:layout_alignStart="@+id/txvC"
+            android:layout_below="@+id/txvC"
+            android:layout_marginTop="29dp"
+            android:text="O download dos formulários estão disponiveis na própria aplicação."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </com.github.barteksc.pdfviewer.PDFView>
+
+    <Spinner
+        android:id="@+id/spinnerTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/pdfView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"
+        android:layout_alignParentBottom="true"
+
+        app:menu="@menu/menusend" />
+
+    <Button
+        android:id="@+id/btnEnviarCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinnerTipo"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_toLeftOf="@+id/bottom_nav"
+        android:layout_toStartOf="@+id/bottom_nav"
+        android:text="Button" />
+
+</RelativeLayout>
+
+

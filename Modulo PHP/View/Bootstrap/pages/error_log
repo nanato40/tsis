@@ -1,0 +1,3 @@
+[19-Jun-2017 11:46:19 America/Chicago] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/tcc20673/public_html/renato/tsis/View/Bootstrap/pages/requisicoes.php on line 46
+[19-Jun-2017 11:46:19 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/tcc20673/public_html/renato/tsis/View/Bootstrap/pages/requisicoes.php:42) in /home/tcc20673/public_html/renato/tsis/View/Bootstrap/pages/requisicoes.php on line 47
+[10-Jul-2017 15:01:50 America/Chicago] PHP Parse error:  syntax error, unexpected '"application/pdf"' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in /home/tcc20673/public_html/renato/tsis/View/Bootstrap/pages/download.php on line 2

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinator_layout"
+    tools:context="com.example.pichau.tsis.LoginActivity">
+
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/btnCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:textColor="@color/cpb_white"
+
+        app:cpb_cornerRadius="5dp"
+        android:layout_below="@+id/txtSenhaLogin"
+        android:layout_marginTop="26dp"
+        android:layout_alignLeft="@+id/txtSenhaLogin"
+        android:layout_alignStart="@+id/txtSenhaLogin"
+        android:layout_alignRight="@+id/txtSenhaLogin"
+        android:layout_alignEnd="@+id/txtSenhaLogin" />
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:textColor="@color/cpb_white"
+        app:cpb_cornerRadius="5dp"
+        android:layout_weight="0.35"
+        android:layout_below="@+id/btnCadastrar"
+        android:layout_marginTop="32dp"
+        android:layout_alignRight="@+id/btnCadastrar"
+        android:layout_alignEnd="@+id/btnCadastrar"
+        android:layout_alignLeft="@+id/btnCadastrar"
+        android:layout_alignStart="@+id/btnCadastrar" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status da conexão:"
+        android:id="@+id/textView11"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/btnRecovery"
+        android:layout_alignLeft="@+id/btnLogin"
+        android:layout_alignStart="@+id/btnLogin" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/textView11"
+        android:layout_toRightOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/txtEmailLogin"
+        android:gravity="center"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtSenhaLogin"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtSenhaLogin"
+        android:layout_marginTop="70dp"
+        android:drawableLeft="@drawable/email"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtSenhaLogin"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmailLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/lock"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/btnRecovery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esqueci minha senha !"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
