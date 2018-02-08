@@ -7,6 +7,7 @@
 
 
 
+
 <table class="tg" align="center">
    <tr>
     <td class="tg-yw4l"><center><h1>Menu</h1></center></td>
@@ -62,5 +63,14 @@
   <tr>
     <td class="tg-yw4l"><center><img src="https://user-images.githubusercontent.com/35781248/35366585-61c1c44e-0161-11e8-9a90-71afe2e1935d.jpg"></center></td>
   </tr>
+  <tr>
+    <td class="tg-yw4l"><br><center><h1>Lista de Requisições</h1></center></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><center><img src="https://user-images.githubusercontent.com/35781248/35985589-1f0f4c42-0cde-11e8-8997-fd973286772a.jpg"></center></td>
+  </tr>
  
 </table>
+
+
+
